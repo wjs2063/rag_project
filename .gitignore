@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local IDE and obsolete generated skill scaffold
+/.idea/
+/.agents/
