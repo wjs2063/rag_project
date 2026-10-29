@@ -151,6 +151,11 @@ activemq-data/
 
 # Environments
 .env
+.env.*.local
+config/source_manifest.json
+data/
+*.sqlite3
+*.report.json
 .envrc
 .venv
 env/

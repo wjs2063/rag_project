@@ -1,0 +1,1 @@
+"""Public POI search service."""

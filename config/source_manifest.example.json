@@ -1,0 +1,48 @@
+{
+  "catalog_csv": "categories.csv",
+  "catalog_version": "v1.4-visit-policy-1",
+  "source_version": "source-release-date",
+  "regions": [
+    {
+      "name": "region-code",
+      "zip": "/absolute/path/to/region-archive.zip",
+      "shp_member": "path/inside/archive/TN_POI.shp",
+      "shx_member": "path/inside/archive/TN_POI.shx",
+      "dbf_member": "path/inside/archive/TN_POI.dbf",
+      "encoding": "cp949",
+      "source_crs": "EPSG:5179",
+      "fields": {
+        "nf_id": "NF_ID",
+        "poiid": "POIID",
+        "category_id": "ACTUAL_CATEGORY_FIELD",
+        "name": "ACTUAL_NAME_FIELD"
+      },
+      "auxiliary": [
+        {
+          "name": "aliases",
+          "zip": "/absolute/path/to/regional-xlsx-archive.zip",
+          "member": "path/inside/archive/aliases.xlsx",
+          "sheet": "ACTUAL_SHEET",
+          "header_row": 1,
+          "key_field": "POIID",
+          "join_on": "POIID",
+          "fields": {"alias": "ACTUAL_ALIAS_FIELD"}
+        },
+        {
+          "name": "address",
+          "zip": "/absolute/path/to/address-archive.zip",
+          "member": "path/inside/archive/address.dbf",
+          "encoding": "cp949",
+          "key_field": "NF_ID",
+          "join_on": "NF_ID",
+          "fields": {"address": "ACTUAL_ADDRESS_FIELD"}
+        }
+      ],
+      "xlsx_check": {
+        "zip": "/absolute/path/to/xlsx-archive.zip",
+        "member": "path/inside/archive/region.xlsx",
+        "header_rows": 1
+      }
+    }
+  ]
+}
