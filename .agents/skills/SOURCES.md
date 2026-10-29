@@ -1,6 +1,6 @@
 # 가져온 스킬의 출처
 
-2026-10-29에 아래 GitHub 커밋에서 프로젝트 `skills/`로 복사했다. `poi-vector-search`는 이 프로젝트를 위해 `skill-creator`로 새로 작성했다. 각 원본 저장소의 라이선스 전문은 `skills/licenses/`에 보관한다. Codex 검증기에 맞게 일부 원본의 `compatibility`·`tags`·`activation` 앞부분 필드를 `metadata`로 옮겼고, MongoDB 스킬의 깨진 상대 링크를 수정했다.
+2026-10-29에 아래 GitHub 커밋에서 프로젝트 `.agents/skills/`로 복사했다. `poi-vector-search`는 이 프로젝트를 위해 `skill-creator`로 새로 작성했다. 각 원본 저장소의 라이선스 전문은 `.agents/skills/licenses/`에 보관한다. Codex 검증기에 맞게 일부 원본의 `compatibility`·`tags`·`activation` 앞부분 필드를 `metadata`로 옮겼고, MongoDB 스킬의 깨진 상대 링크를 수정했다.
 
 | 출처 | 고정 커밋 | 포함 범위 |
 | --- | --- | --- |
